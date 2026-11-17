@@ -34,67 +34,28 @@
                     <p>
                         Kādreiz pietika ar divām svītrām un bumbiņu uz ekrāna.
                         Vēlāk spēles varēja paņemt līdzi kabatā un spēlēt kopā ar draugiem internetā.
-                        Iepazīsti astoņas pieturas šajā attīstības ceļā!
+                        Iepazīsti pieturas šajā attīstības ceļā!
                     </p>
                     <a class="button" href="#galerija">Apskatīt izstādi</a>
                 </div>
             </div>
         </section>
 
-                <section class="carousel-section" id="karuselis">
+        <section class="carousel-section" id="karuselis">
             <div class="container">
-                <h2>Laika ceļojums astoņos attēlos</h2>
-                <p>Astoņas pieturas, kas parāda pārmaiņas spēļu ierīcēs un to vadībā.</p>
+                <h2>Laika ceļojums attēlos</h2>
+                <p>Pieturas, kas parāda pārmaiņas spēļu ierīcēs un to vadībā.</p>
 
-                <!-- JavaScript pārslēdz slaidus, mainot to hidden īpašību. -->
-                <div class="carousel" id="carousel-slides">
-                    <figure class="carousel-slide">
-                        <img src="images/pong.jpg" alt="Atari Pong spēļu automāts" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>1972 / Pong</h3>
-                            <p>Divi spēlētāji, divas raketes un viena bumbiņa.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/famicom.jpg" alt="Nintendo Famicom mājas konsole ar divām pultīm" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>1983 / Nintendo Famicom</h3>
-                            <p>Spēļu kasetnes un vadības pultis pie mājas televizora.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/game-boy.jpg" alt="Nintendo Game Boy pārnēsājamā konsole" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>1989 / Game Boy</h3>
-                            <p>Spēlēšanai vairs nav vajadzīgs televizors.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/wii.png" alt="Nintendo Wii konsole ar kustību vadības pulti" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>2006 / Nintendo Wii</h3>
-                            <p>Spēlētāja kustības kļūst par daļu no spēles vadības.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/nintendo-switch.jpg" alt="Nintendo Switch pārnēsājamajā režīmā" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>2017 / Nintendo Switch</h3>
-                            <p>Viena konsole spēlēšanai gan mājās, gan ceļā.</p>
-                        </figcaption>
-                    </figure>
-                </div>
+                <!-- Slaidu ielādei no sadalas/ vajadzīgs JavaScript; ielāde vēl nav ieviesta. -->
+                <div class="carousel" id="carousel-slides"></div>
+                <p>Izstādes pieturas pieejamas <a href="#galerija">galerijas saišu sarakstā</a>.</p>
 
                 <div class="carousel-controls">
-                    <button type="button" id="previous-slide" aria-controls="carousel-slides">Iepriekšējais</button>
-                    <button type="button" id="toggle-autoplay" aria-controls="carousel-slides" aria-pressed="false">Automātiskā maiņa</button>
-                    <button type="button" id="next-slide" aria-controls="carousel-slides">Nākamais</button>
+                    <button type="button" id="previous-slide" disabled aria-controls="carousel-slides">Iepriekšējais</button>
+                    <button type="button" id="toggle-autoplay" disabled aria-controls="carousel-slides" aria-pressed="false">Automātiskā maiņa</button>
+                    <button type="button" id="next-slide" disabled aria-controls="carousel-slides">Nākamais</button>
                 </div>
-                <p class="slide-counter" id="slide-counter">1 / 5</p>
+                <p class="slide-counter" id="slide-counter" hidden></p>
             </div>
         </section>
 
@@ -103,7 +64,7 @@
                 <h2>Par izstādi</h2>
                 <p>
                     Šīs izstādes mērķis ir parādīt, kā mainījās videospēles un ierīces,
-                    ar kurām tās spēlējam. Esam izvēlējušies vienu spēļu automātu un septiņas
+                    ar kurām tās spēlējam. Esam izvēlējušies spēļu automātus un
                     konsoles, kas palīdz iepazīt dažādus videospēļu vēstures posmus.
                 </p>
                 <p>
@@ -112,113 +73,29 @@
                     pultis un pats spēlēšanas veids. Norādītie gadi ir spēles vai ierīces
                     pirmās iznākšanas gadi; dažādos reģionos tie var atšķirties.
                 </p>
-                <a href="#karuselis">Pāriet uz astoņu pieturu laika ceļojumu</a>
+                <a href="#karuselis">Pāriet uz laika ceļojumu</a>
             </div>
         </section>
 
-        <!-- Visām galerijas kartītēm ir vienāda struktūra. -->
+        <!-- Katra pietura glabājas atsevišķā HTML failā mapē sadalas/. -->
         <section class="gallery" id="galerija">
             <div class="container">
-                <h2>Astoņas pieturas videospēļu vēsturē</h2>
+                <h2>Pieturas videospēļu vēsturē</h2>
                 <p>No arkādes spēļu zāles līdz konsolei, kuru var paņemt līdzi.</p>
 
-                <div class="gallery-grid">
-                    <article class="gallery-item">
-                        <img src="images/pong.jpg" alt="Dzeltenais Atari Pong spēļu automāts ar ekrānu un diviem vadības rokturiem" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="1972">1972</time></p>
-                            <h3>Pong</h3>
-                            <p>
-                                Atari spēlē divi spēlētāji atvaira bumbiņu ar ekrānā redzamām raketēm.
-                                Vienkāršā galda tenisa spēle kļuva par vienu no agrīnajiem videospēļu panākumiem.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/atari-2600.jpg" alt="Atari 2600 konsole ar koka raksta priekšpusi un kursorsviru" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="1977">1977</time></p>
-                            <h3>Atari 2600</h3>
-                            <p>
-                                Sākotnēji šo konsoli sauca par Atari VCS. Maināmās kasetnes ļāva
-                                vienā ierīcē spēlēt dažādas spēles mājās pie televizora.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/famicom.jpg" alt="Sarkanbalta Nintendo Famicom konsole ar divām vadu pultīm" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="1983">1983</time></p>
-                            <h3>Nintendo Famicom</h3>
-                            <p>
-                                Famicom iznāca Japānā, bet vēlāk citos tirgos parādījās tās pārveidotā
-                                versija NES. Ar šo konsoļu saimi saistās arī Super Mario Bros. spēle.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/game-boy.jpg" alt="Pelēka Nintendo Game Boy pārnēsājamā konsole ar ekrānu un tumši sarkanām pogām" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="1989">1989</time></p>
-                            <h3>Game Boy</h3>
-                            <p>
-                                Game Boy ļāva spēlēt bez televizora. Mazs ekrāns, pogas un maināmas
-                                spēļu kasetnes bija apvienotas vienā pārnēsājamā ierīcē.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/playstation.jpg" alt="Pirmā pelēkā Sony PlayStation konsole ar vadības pulti" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="1994">1994</time></p>
-                            <h3>PlayStation</h3>
-                            <p>
-                                Sony pirmā PlayStation iznāca Japānā 1994. gadā. Tā izmantoja
-                                CD diskus un palīdzēja trīsdimensiju spēļu pasaulēm kļūt ierastākām.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/xbox.jpg" alt="Pirmā melnā Microsoft Xbox konsole ar lielo vadības pulti" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="2001">2001</time></p>
-                            <h3>Xbox</h3>
-                            <p>
-                                Ar pirmo Xbox Microsoft ienāca spēļu konsoļu tirgū. Konsole vispirms
-                                iznāca Ziemeļamerikā, un viena no tās pazīstamajām spēlēm bija Halo.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/wii.png" alt="Balta Nintendo Wii konsole statīvā un Wii Remote vadības pults" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="2006">2006</time></p>
-                            <h3>Nintendo Wii</h3>
-                            <p>
-                                Wii spēlēs svarīgas kļuva arī spēlētāja kustības. Ar Wii Remote pulti
-                                varēja, piemēram, atdarināt tenisa raketes vēzienu.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="gallery-item">
-                        <img src="images/nintendo-switch.jpg" alt="Nintendo Switch ekrāns ar pievienotām zilas un sarkanas krāsas Joy-Con pultīm" width="280" loading="lazy">
-                        <div class="gallery-content">
-                            <p class="year"><time datetime="2017">2017</time></p>
-                            <h3>Nintendo Switch</h3>
-                            <p>
-                                Switch var izmantot gan pie televizora, gan kā pārnēsājamu konsoli.
-                                Noņemamās Joy-Con pultis piedāvā vairākus spēlēšanas veidus.
-                            </p>
-                        </div>
-                    </article>
-                </div>
+                <!-- Nākotnes JavaScript var izmantot data-stage-link saites kā failu sarakstu
+                     un ielādēt katra faila .gallery-item šajā konteinerā. -->
+                <div class="gallery-grid" id="gallery-items"></div>
+                <ul class="stage-links">
+                    <li><a href="sadalas/pong.html" data-stage-link>1972 / Pong</a></li>
+                    <li><a href="sadalas/atari-2600.html" data-stage-link>1977 / Atari 2600</a></li>
+                    <li><a href="sadalas/famicom.html" data-stage-link>1983 / Nintendo Famicom</a></li>
+                    <li><a href="sadalas/game-boy.html" data-stage-link>1989 / Game Boy</a></li>
+                    <li><a href="sadalas/playstation.html" data-stage-link>1994 / PlayStation</a></li>
+                    <li><a href="sadalas/xbox.html" data-stage-link>2001 / Xbox</a></li>
+                    <li><a href="sadalas/wii.html" data-stage-link>2006 / Nintendo Wii</a></li>
+                    <li><a href="sadalas/nintendo-switch.html" data-stage-link>2017 / Nintendo Switch</a></li>
+                </ul>
             </div>
         </section>
 
