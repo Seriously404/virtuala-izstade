@@ -6,6 +6,14 @@
     <meta name="description" content="Virtuāla izstāde par videospēļu vēsturi: no Pong spēļu automāta līdz Nintendo Switch konsolei.">
     <title>Videospēļu vēsture | Spēļu pietura</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="sadalas/pong.js" defer></script>
+    <script src="sadalas/atari-2600.js" defer></script>
+    <script src="sadalas/famicom.js" defer></script>
+    <script src="sadalas/game-boy.js" defer></script>
+    <script src="sadalas/playstation.js" defer></script>
+    <script src="sadalas/xbox.js" defer></script>
+    <script src="sadalas/wii.js" defer></script>
+    <script src="sadalas/nintendo-switch.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -36,26 +44,7 @@
                         Vēlāk spēles varēja paņemt līdzi kabatā un spēlēt kopā ar draugiem internetā.
                         Iepazīsti pieturas šajā attīstības ceļā!
                     </p>
-                    <a class="button" href="#galerija">Apskatīt izstādi</a>
                 </div>
-            </div>
-        </section>
-
-        <section class="carousel-section" id="karuselis">
-            <div class="container">
-                <h2>Laika ceļojums attēlos</h2>
-                <p>Pieturas, kas parāda pārmaiņas spēļu ierīcēs un to vadībā.</p>
-
-                <!-- Slaidu ielādei no sadalas/ vajadzīgs JavaScript; ielāde vēl nav ieviesta. -->
-                <div class="carousel" id="carousel-slides"></div>
-                <p>Izstādes pieturas pieejamas <a href="#galerija">galerijas saišu sarakstā</a>.</p>
-
-                <div class="carousel-controls">
-                    <button type="button" id="previous-slide" disabled aria-controls="carousel-slides">Iepriekšējais</button>
-                    <button type="button" id="toggle-autoplay" disabled aria-controls="carousel-slides" aria-pressed="false">Automātiskā maiņa</button>
-                    <button type="button" id="next-slide" disabled aria-controls="carousel-slides">Nākamais</button>
-                </div>
-                <p class="slide-counter" id="slide-counter" hidden></p>
             </div>
         </section>
 
@@ -73,29 +62,6 @@
                     pultis un pats spēlēšanas veids. Norādītie gadi ir spēles vai ierīces
                     pirmās iznākšanas gadi; dažādos reģionos tie var atšķirties.
                 </p>
-                <a href="#karuselis">Pāriet uz laika ceļojumu</a>
-            </div>
-        </section>
-
-        <!-- Katra pietura glabājas atsevišķā HTML failā mapē sadalas/. -->
-        <section class="gallery" id="galerija">
-            <div class="container">
-                <h2>Pieturas videospēļu vēsturē</h2>
-                <p>No arkādes spēļu zāles līdz konsolei, kuru var paņemt līdzi.</p>
-
-                <!-- Nākotnes JavaScript var izmantot data-stage-link saites kā failu sarakstu
-                     un ielādēt katra faila .gallery-item šajā konteinerā. -->
-                <div class="gallery-grid" id="gallery-items"></div>
-                <ul class="stage-links">
-                    <li><a href="sadalas/pong.html" data-stage-link>1972 / Pong</a></li>
-                    <li><a href="sadalas/atari-2600.html" data-stage-link>1977 / Atari 2600</a></li>
-                    <li><a href="sadalas/famicom.html" data-stage-link>1983 / Nintendo Famicom</a></li>
-                    <li><a href="sadalas/game-boy.html" data-stage-link>1989 / Game Boy</a></li>
-                    <li><a href="sadalas/playstation.html" data-stage-link>1994 / PlayStation</a></li>
-                    <li><a href="sadalas/xbox.html" data-stage-link>2001 / Xbox</a></li>
-                    <li><a href="sadalas/wii.html" data-stage-link>2006 / Nintendo Wii</a></li>
-                    <li><a href="sadalas/nintendo-switch.html" data-stage-link>2017 / Nintendo Switch</a></li>
-                </ul>
             </div>
         </section>
 
@@ -130,7 +96,7 @@
     <footer class="footer">
         <div class="container">
             <!-- Komandas nosaukumu var aizstāt ar visu trīs dalībnieku vārdiem. -->
-            <p>&copy; 2026 Komanda “Spēļu pietura”. Mācību projekts.</p>
+            <p>&copy; 2026 Ronalds Krūmiņš, Gabriēls Buholts, Olivers Martinsons. Mācību projekts.</p>
             <p>Spēļu un ierīču nosaukumi pieder to īpašniekiem. Attēlu licences norādītas avotu sadaļā.</p>
             <a href="https://github.com/Seriously404/virtuala-izstade">Projekts GitHub</a>
             <a href="#sakums">Atpakaļ uz sākumu</a>
