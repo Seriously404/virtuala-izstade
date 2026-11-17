@@ -38,10 +38,63 @@
                     </p>
                     <a class="button" href="#galerija">Apskatīt izstādi</a>
                 </div>
-                <figure class="hero-image">
-                    <img src="images/nintendo-switch.jpg" alt="Nintendo Switch konsole ar zilu un sarkanu vadības pulti" width="320">
-                    <figcaption>Nintendo Switch apvieno spēlēšanu pie televizora un pārnēsājamā režīmā.</figcaption>
-                </figure>
+            </div>
+        </section>
+
+                <section class="carousel-section" id="karuselis">
+            <div class="container">
+                <h2>Laika ceļojums astoņos attēlos</h2>
+                <p>Astoņas pieturas, kas parāda pārmaiņas spēļu ierīcēs un to vadībā.</p>
+
+                <!-- JavaScript pārslēdz slaidus, mainot to hidden īpašību. -->
+                <div class="carousel" id="carousel-slides">
+                    <figure class="carousel-slide">
+                        <img src="images/pong.jpg" alt="Atari Pong spēļu automāts" width="320" loading="lazy">
+                        <figcaption>
+                            <h3>1972 / Pong</h3>
+                            <p>Divi spēlētāji, divas raketes un viena bumbiņa.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img src="images/famicom.jpg" alt="Nintendo Famicom mājas konsole ar divām pultīm" width="320" loading="lazy">
+                        <figcaption>
+                            <h3>1983 / Nintendo Famicom</h3>
+                            <p>Spēļu kasetnes un vadības pultis pie mājas televizora.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img src="images/game-boy.jpg" alt="Nintendo Game Boy pārnēsājamā konsole" width="320" loading="lazy">
+                        <figcaption>
+                            <h3>1989 / Game Boy</h3>
+                            <p>Spēlēšanai vairs nav vajadzīgs televizors.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img src="images/wii.png" alt="Nintendo Wii konsole ar kustību vadības pulti" width="320" loading="lazy">
+                        <figcaption>
+                            <h3>2006 / Nintendo Wii</h3>
+                            <p>Spēlētāja kustības kļūst par daļu no spēles vadības.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img src="images/nintendo-switch.jpg" alt="Nintendo Switch pārnēsājamajā režīmā" width="320" loading="lazy">
+                        <figcaption>
+                            <h3>2017 / Nintendo Switch</h3>
+                            <p>Viena konsole spēlēšanai gan mājās, gan ceļā.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="carousel-controls">
+                    <button type="button" id="previous-slide" aria-controls="carousel-slides">Iepriekšējais</button>
+                    <button type="button" id="toggle-autoplay" aria-controls="carousel-slides" aria-pressed="false">Automātiskā maiņa</button>
+                    <button type="button" id="next-slide" aria-controls="carousel-slides">Nākamais</button>
+                </div>
+                <p class="slide-counter" id="slide-counter">1 / 5</p>
             </div>
         </section>
 
@@ -59,7 +112,7 @@
                     pultis un pats spēlēšanas veids. Norādītie gadi ir spēles vai ierīces
                     pirmās iznākšanas gadi; dažādos reģionos tie var atšķirties.
                 </p>
-                <a href="#karuselis">Pāriet uz piecu pieturu laika ceļojumu</a>
+                <a href="#karuselis">Pāriet uz astoņu pieturu laika ceļojumu</a>
             </div>
         </section>
 
@@ -166,63 +219,6 @@
                         </div>
                     </article>
                 </div>
-            </div>
-        </section>
-
-        <section class="carousel-section" id="karuselis">
-            <div class="container">
-                <h2>Laika ceļojums piecos attēlos</h2>
-                <p>Piecas pieturas, kas parāda pārmaiņas spēļu ierīcēs un to vadībā.</p>
-
-                <!-- JavaScript pārslēdz slaidus, mainot to hidden īpašību. -->
-                <div class="carousel" id="carousel-slides">
-                    <figure class="carousel-slide">
-                        <img src="images/pong.jpg" alt="Atari Pong spēļu automāts" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>1972 / Pong</h3>
-                            <p>Divi spēlētāji, divas raketes un viena bumbiņa.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/famicom.jpg" alt="Nintendo Famicom mājas konsole ar divām pultīm" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>1983 / Nintendo Famicom</h3>
-                            <p>Spēļu kasetnes un vadības pultis pie mājas televizora.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/game-boy.jpg" alt="Nintendo Game Boy pārnēsājamā konsole" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>1989 / Game Boy</h3>
-                            <p>Spēlēšanai vairs nav vajadzīgs televizors.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/wii.png" alt="Nintendo Wii konsole ar kustību vadības pulti" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>2006 / Nintendo Wii</h3>
-                            <p>Spēlētāja kustības kļūst par daļu no spēles vadības.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="carousel-slide" hidden>
-                        <img src="images/nintendo-switch.jpg" alt="Nintendo Switch pārnēsājamajā režīmā" width="320" loading="lazy">
-                        <figcaption>
-                            <h3>2017 / Nintendo Switch</h3>
-                            <p>Viena konsole spēlēšanai gan mājās, gan ceļā.</p>
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="carousel-controls">
-                    <button type="button" id="previous-slide" aria-controls="carousel-slides">Iepriekšējais</button>
-                    <button type="button" id="toggle-autoplay" aria-controls="carousel-slides" aria-pressed="false">Automātiskā maiņa</button>
-                    <button type="button" id="next-slide" aria-controls="carousel-slides">Nākamais</button>
-                </div>
-                <p class="slide-counter" id="slide-counter">1 / 5</p>
             </div>
         </section>
 
