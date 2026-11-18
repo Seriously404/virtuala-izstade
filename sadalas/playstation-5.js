@@ -7,7 +7,7 @@ window.exhibitionStages.push({
     "order": 17,
     "image": "images/playstation-5-prieksplans_17.png",
     "backgroundImage": "images/playstation-5-fons_17.jpg",
-    "description": "PS5 SSD saīsināja ielādes laiku. Atbalstītajās spēlēs DualSense pults sniedz daudzveidīgu taustes atgriezenisko saiti un mainīgu trigeru pretestību.",
+    "description": "PS5 SSD saīsināja ielādes laiku. Atbalstītajās spēlēs DualSense pults sniedz daudzveidīgu taustes atgriezenisko saiti un mainīgu pogu pretestību.",
     "imageResolution": {
         "width": 1920,
         "height": 3477

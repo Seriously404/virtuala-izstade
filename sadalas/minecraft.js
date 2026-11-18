@@ -7,7 +7,7 @@ window.exhibitionStages.push({
     "order": 14,
     "image": "images/minecraft-prieksplans_14.png",
     "backgroundImage": "images/minecraft-fons_14.png",
-    "description": "Minecraft pasaulē var vākt resursus, būvēt un pētīt apkārtni. Pirmā publiskā versija parādījās 2009. gadā, bet pilnā 1.0 versija — 2011. gadā.",
+    "description": "Minecraft pasaulē var vākt resursus, būvēt un pētīt apkārtni. Pirmā publiskā versija parādījās 2009. gadā, bet pilnā 1.0 versija parādijās 2011. gadā. Šī spēle bija revolucionāra, un ir viena no pārdotākajām pasaulē, un audzē paaudzes līdz pat šodienai.",
     "imageResolution": {
         "width": 1024,
         "height": 176

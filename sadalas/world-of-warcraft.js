@@ -7,7 +7,7 @@ window.exhibitionStages.push({
     "order": 12,
     "image": "images/world-of-warcraft-prieksplans_12.png",
     "backgroundImage": "images/world-of-warcraft-fons_12.png",
-    "description": "World of Warcraft piedāvāja plašu tiešsaistes pasauli, kur spēlētāji sadarbojas un sacenšas. Spēle pirmoreiz iznāca 2004. gadā, bet Eiropā — 2005. gadā.",
+    "description": "World of Warcraft piedāvāja plašu tiešsaistes pasauli, kur spēlētāji sadarbojas un sacenšas. Spēle pirmoreiz iznāca 2004. gadā, bet Eiropā tā parādījās tikai 2005. gadā, un apvienoja spēlētājus no visas pasaules.",
     "imageResolution": {
         "width": 264,
         "height": 378
