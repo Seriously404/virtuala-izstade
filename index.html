@@ -25,7 +25,8 @@
     <script src="sadalas/playstation-5.js" defer></script>
     <script src="sadalas/steam-deck.js" defer></script>
     <script src="sadalas/dlss-4-5.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 <body>
     <header class="header" id="sakums">
@@ -35,6 +36,8 @@
                 <ul>
                     <li><a href="#sakums">Sākums</a></li>
                     <li><a href="#par-izstadi">Par izstādi</a></li>
+                    <li><a href="#karuselis">Karuselis</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
                     <li><a href="#avoti">Avoti</a></li>
                 </ul>
             </nav>
@@ -75,6 +78,60 @@
                     pirmās iznākšanas gadi; dažādos reģionos tie var atšķirties.
                 </p>
             </div>
+        </section>
+
+        <section class="carousel-section" id="karuselis">
+            <h2>Karuselis</h2>
+
+            <figure class="carousel-figure">
+                <div class="carousel-layout">
+                    <img id="carousel-image" alt="">
+
+                    <button
+                        type="button"
+                        id="carousel-previous"
+                        class="carousel-arrow"
+                        aria-label="Iepriekšējais attēls"
+                    >
+                        <svg
+                            viewBox="0 0 40 200"
+                            preserveAspectRatio="none"
+                            aria-hidden="true"
+                            focusable="false"
+                        >
+                            <polyline
+                                points="30,8 10,100 30,192"
+                                vector-effect="non-scaling-stroke"
+                            />
+                        </svg>
+                    </button>
+
+                    <button
+                        type="button"
+                        id="carousel-next"
+                        class="carousel-arrow"
+                        aria-label="Nākamais attēls"
+                    >
+                        <svg
+                            viewBox="0 0 40 200"
+                            preserveAspectRatio="none"
+                            aria-hidden="true"
+                            focusable="false"
+                        >
+                            <polyline
+                                points="10,8 30,100 10,192"
+                                vector-effect="non-scaling-stroke"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <figcaption class="carousel-caption">
+                    <p id="carousel-counter" aria-live="polite"></p>
+                    <h3 id="carousel-title"></h3>
+                    <p id="carousel-description"></p>
+                </figcaption>
+            </figure>
         </section>
 
         <section class="gallery" id="galerija">
