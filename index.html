@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Virtuāla izstāde par videospēļu vēsturi: no Pong spēļu automāta līdz Nintendo Switch konsolei.">
+    <meta name="description" content="Virtuāla izstāde par videospēļu vēsturi: no Pong spēļu automāta līdz mūsdienu datorspēļu grafikai.">
     <title>Videospēļu vēsture | Spēļu pietura</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="sadalas/pong.js" defer></script>
     <script src="sadalas/atari-2600.js" defer></script>
+    <script src="sadalas/ibm-pc.js" defer></script>
+    <script src="sadalas/commodore-64.js" defer></script>
     <script src="sadalas/famicom.js" defer></script>
     <script src="sadalas/game-boy.js" defer></script>
+    <script src="sadalas/doom.js" defer></script>
     <script src="sadalas/playstation.js" defer></script>
+    <script src="sadalas/geforce-256.js" defer></script>
     <script src="sadalas/xbox.js" defer></script>
+    <script src="sadalas/steam.js" defer></script>
+    <script src="sadalas/world-of-warcraft.js" defer></script>
     <script src="sadalas/wii.js" defer></script>
+    <script src="sadalas/minecraft.js" defer></script>
+    <script src="sadalas/playstation-4.js" defer></script>
     <script src="sadalas/nintendo-switch.js" defer></script>
+    <script src="sadalas/playstation-5.js" defer></script>
+    <script src="sadalas/steam-deck.js" defer></script>
+    <script src="sadalas/dlss-4-5.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -31,7 +42,6 @@
     </header>
 
     <main>
-        <!-- Ievads un galvenais attēls -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -51,13 +61,13 @@
                 <h2>Par izstādi</h2>
                 <p>
                     Šīs izstādes mērķis ir parādīt, kā mainījās videospēles un ierīces,
-                    ar kurām tās spēlējam. Esam izvēlējušies spēļu automātus un
-                    konsoles, kas palīdz iepazīt dažādus videospēļu vēstures posmus.
+                    ar kurām tās spēlējam. Esam izvēlējušies spēļu automātus,
+                    konsoles, personālos datorus, spēles un grafikas tehnoloģijas, kas palīdz iepazīt dažādus videospēļu vēstures posmus.
                 </p>
                 <p>
-                    Galerija sākas ar Pong un turpinās ar mājas un pārnēsājamām konsolēm.
+                    Galerija sākas ar Pong un turpinās ar konsolēm, datorspēlēm un grafikas tehnoloģijām.
                     Pievērs uzmanību tam, kā mainās ne tikai spēļu grafika, bet arī vadības
-                    pultis un pats spēlēšanas veids. Norādītie gadi ir spēles vai ierīces
+                    pultis un pats spēlēšanas veids. Norādītie gadi ir spēles, ierīces vai tehnoloģijas
                     pirmās iznākšanas gadi; dažādos reģionos tie var atšķirties.
                 </p>
             </div>
@@ -71,20 +81,62 @@
                     <li><a href="https://www.nintendo.co.jp/corporate/en/history/index.html">Nintendo vēsture</a></li>
                     <li><a href="https://www.playstation.com/en-us/playstation-history/1994-ps-one/">Pirmās PlayStation vēsture</a></li>
                     <li><a href="https://news.xbox.com/en-us/2021/05/13/celebrating-20-years-of-xbox/">Xbox divdesmitgades atskats</a></li>
+                    <li><a href="https://www.ibm.com/history/personal-computer">IBM PC vēsture</a></li>
+                    <li><a href="https://www.si.edu/object/commodore-64-microcomputer%3Anmah_334636">Commodore 64 — Smitsona muzeja kolekcija</a></li>
+                    <li><a href="https://www.computerhistory.org/timeline/graphics-games/">DOOM un datorspēļu attīstība — Datorvēstures muzejs</a></li>
+                    <li><a href="https://blogs.nvidia.com/blog/first-gpu-gaming-ai/">GeForce 256 vēsture</a></li>
+                    <li><a href="https://store.steampowered.com/oldnews/183">Steam sākotnējās versijas izlaišana</a></li>
+                    <li><a href="https://investor.activision.com/node/18936">World of Warcraft sākums un attīstība</a></li>
+                    <li><a href="https://news.xbox.com/en-us/2024/05/17/minecraft-15-years-most-important-moments/">Minecraft attīstības nozīmīgākie notikumi</a></li>
+                    <li><a href="https://www.playstation.com/en-us/playstation-history/2013-ps4-ps-vr/">PlayStation 4 vēsture</a></li>
+                    <li><a href="https://www.playstation.com/en-us/playstation-history/2020-ps5-ps-vr2/">PlayStation 5 vēsture</a></li>
+                    <li><a href="https://store.steampowered.com/sale/steamdeck_old">Steam Deck sākotnējā modeļa izlaišana</a></li>
+                    <li><a href="https://www.nvidia.com/en-us/geforce/news/dlss-4-5-super-resolution-available-now/">DLSS 4.5 attēla rekonstrukcijas izlaišana 2026. gadā</a></li>
                 </ul>
 
                 <details class="image-credits">
                     <summary>Attēlu autori un licences</summary>
-                    <p>Attēli iegūti no Wikimedia Commons. Saites ved uz oriģinālu aprakstiem.</p>
+                    <p>Attēli saglabāti lokāli no Wikimedia un izdevēju vietnēm. Saites ved uz konkrētajiem avotiem.</p>
+                    <p>Katram posmam ir priekšplāna attēls un atsevišķs karuseļa fons. Spēļu ekrānattēliem un reklāmas ilustrācijām nav automātiski piemērojama brīva licence.</p>
                     <ul>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Atari_Pong_arcade_game_cabinet.jpg">Pong</a>: Rob Boudon; attēla apstrāde: Ubcule. <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg">Atari 2600</a>: Evan-Amos. Publiskais īpašums.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Console-Set-FL.jpg">Famicom</a>: Evan-Amos. Publiskais īpašums.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Game-Boy-FL.jpg">Game Boy</a>: Evan-Amos. Publiskais īpašums.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:PSX-Console-wController.jpg">PlayStation</a>: Evan-Amos. Publiskais īpašums.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Xbox-Console-wDuke-L.jpg">Xbox</a>: Evan-Amos. Publiskais īpašums.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Wii-Console.png">Wii</a>: Evan-Amos. Publiskais īpašums.</li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Nintendo-Switch-wJoyCons-BlRd-Standing-FL.jpg">Nintendo Switch</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Atari_Pong_arcade_game_cabinet.jpg">Pong — priekšplāns</a>: Rob Boudon; attēla apstrāde: Ubcule. <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Pong.png">Pong — karuseļa fons</a>: Bumm13. Publiskais īpašums. Pong vēlākas programmatūras versijas ekrānattēls; tā nav sākotnējā automāta fotogrāfija.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg">Atari 2600 — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:A2600_Pitfall.png">Atari 2600 — karuseļa fons</a>: Activision. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:IBM_PC-IMG_7271_(transparent).png">IBM PC — priekšplāns</a>: Rama &amp; Musée Bolo. <a href="https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en">CC BY-SA 2.0 fr</a>.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Msfs1.00_000.png">IBM PC — karuseļa fons</a>: Microsoft / subLOGIC. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.png">Commodore 64 — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Giana_Sisters_Screenshot.png">Commodore 64 — karuseļa fons</a>: Time Warp Productions / Rainbow Arts. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Console-Set-FL.jpg">Nintendo Famicom — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:NES_Super_Mario_Bros.png">Nintendo Famicom — karuseļa fons</a>: Nintendo. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Game-Boy-FL.jpg">Game Boy — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:GB_Tetris.png">Game Boy — karuseļa fons</a>: Nintendo / The Tetris Company. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Doom_cover_art.jpg">DOOM — priekšplāns</a>: Don Ivan Punchatz / id Software. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Doom_ingame_1.png">DOOM — karuseļa fons</a>: id Software. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:PSX-Console-wController.jpg">PlayStation — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:PSX_Ridge_Racer.png">PlayStation — karuseļa fons</a>: Namco. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:VisionTek_GeForce_256.jpg">GeForce 256 — priekšplāns</a>: Hyins. Publiskais īpašums.</li>
+                        <li><a href="https://store.steampowered.com/app/2200/">GeForce 256 — karuseļa fons</a>: id Software / Bethesda Softworks. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Xbox-Console-wDuke-L.jpg">Xbox — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Halo_-_Combat_Evolved_(screencap).jpg">Xbox — karuseļa fons</a>: Bungie / Microsoft Game Studios. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Steam_(service).png">Steam — priekšplāns</a>: Valve. Autortiesības aizsargātas; brīva licence nav norādīta. Vēlākas Steam saskarnes piemērs; nav 2003. gada programmas versija.</li>
+                        <li><a href="https://store.steampowered.com/app/220/">Steam — karuseļa fons</a>: Valve. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:World_of_Warcraft.png">World of Warcraft — priekšplāns</a>: Blizzard Entertainment. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://worldofwarcraft.blizzard.com/en-us/classic">World of Warcraft — karuseļa fons</a>: Blizzard Entertainment. Autortiesības aizsargātas; brīva licence nav norādīta. WoW Classic reklāmas ilustrācija; nav 2004. gada ekrānattēls.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Wii-Console.png">Nintendo Wii — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Duo_playing_Wii_Sports.jpg">Nintendo Wii — karuseļa fons</a>: David Murphy. <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Minecraft_Logo_(higher_quality).png">Minecraft 1.0 — priekšplāns</a>: Xbox México. <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Screenshot_from_the_Minecraft_Nether.png">Minecraft 1.0 — karuseļa fons</a>: Xbox México. <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:PS4-Console-wDS4.jpg">PlayStation 4 — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://blog.playstation.com/2013/11/02/killzone-shadow-fall-campaign-hands-on-new-multiplayer-footage/">PlayStation 4 — karuseļa fons</a>: Guerrilla Games / Sony Interactive Entertainment. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Nintendo-Switch-wJoyCons-BlRd-Standing-FL.jpg">Nintendo Switch — priekšplāns</a>: Evan-Amos. Publiskais īpašums.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/File:Breath_of_the_Wild_paraglide.jpg">Nintendo Switch — karuseļa fons</a>: Nintendo. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Black_and_white_Playstation_5_base_edition_with_controller.png">PlayStation 5 — priekšplāns</a>: Howardcorn33. <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>.</li>
+                        <li><a href="https://www.playstation.com/en-us/games/astros-playroom/">PlayStation 5 — karuseļa fons</a>: Team Asobi / Sony Interactive Entertainment. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Steam_Deck_(front).png">Steam Deck — priekšplāns</a>: Liam Dawe/GamingOnLinux, PNG version by VulcanSphere. <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>.</li>
+                        <li><a href="https://store.steampowered.com/app/1902490/">Steam Deck — karuseļa fons</a>: Valve. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://www.nvidia.com/en-us/geforce/news/dlss-4-5-super-resolution-available-now/">DLSS 4.5 — priekšplāns</a>: NVIDIA. Autortiesības aizsargātas; brīva licence nav norādīta.</li>
+                        <li><a href="https://store.steampowered.com/app/1091500/">DLSS 4.5 — karuseļa fons</a>: CD PROJEKT RED. Autortiesības aizsargātas; brīva licence nav norādīta. Atmosfēras ilustrācija, nevis DLSS ieslēgta un izslēgta režīma salīdzinājums.</li>
                     </ul>
                 </details>
             </div>
@@ -93,8 +145,7 @@
 
     <footer class="footer">
         <div class="container">
-            <!-- Komandas nosaukumu var aizstāt ar visu trīs dalībnieku vārdiem. -->
-            <p>&copy; 2026 Ronalds Krūmiņš, Gabriēls Buholts, Olivers Martinsons. Mācību projekts.</p>
+            <p>&copy; 2026 Ronalds Krūmiņš, Gabriēls Buholts, Olivers Martinsons.</p>
             <p>Spēļu un ierīču nosaukumi pieder to īpašniekiem. Attēlu licences norādītas avotu sadaļā.</p>
             <a href="https://github.com/Seriously404/virtuala-izstade">Projekts GitHub</a>
             <a href="#sakums">Atpakaļ uz sākumu</a>
