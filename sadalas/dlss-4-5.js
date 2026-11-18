@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 1920,
         "height": 1080
-    }
+    },
+    "alt": "NVIDIA DLSS 4.5 attēla rekonstrukcijas tehnoloģijas ilustrācija",
+    "backgroundAlt": "Cyberpunk 2077 nakts aina ar tēliem automobilī"
 });

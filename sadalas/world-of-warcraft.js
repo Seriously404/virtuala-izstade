@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 2600,
         "height": 1260
-    }
+    },
+    "alt": "World of Warcraft sākotnējās spēles iepakojuma ilustrācija",
+    "backgroundAlt": "World of Warcraft Classic fantāzijas pasaules ilustrācija ar pūķi"
 });

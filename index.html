@@ -55,9 +55,11 @@
                         Vēlāk spēles varēja paņemt līdzi kabatā un spēlēt kopā ar draugiem internetā.
                         Iepazīsti pieturas šajā attīstības ceļā!
                     </p>
+                    <a class="button" href="#karuselis">Sākt laika ceļojumu</a>
                 </div>
                 <figure class="hero-image">
                     <img src="images/videospelu-attistiba-hero.jpg"
+                         alt="Dažādu gadu spēļu konsoles un datori Berlīnes datorspēļu muzeja laika līnijā"
                          width="5828" height="3199" fetchpriority="high">
                 </figure>
             </div>
@@ -121,9 +123,17 @@
                 </div>
 
                 <figcaption class="carousel-caption">
+                    <div class="carousel-progress">
+                        <progress id="carousel-progress" max="5000" value="0"
+                                  aria-label="Laiks līdz nākamajam attēlam" hidden></progress>
+                    </div>
                     <p id="carousel-counter" aria-live="polite"></p>
                     <h3 id="carousel-title"></h3>
                     <p id="carousel-description"></p>
+                    <button type="button" id="carousel-autoplay" class="button"
+                            aria-pressed="false" aria-controls="carousel-image">
+                        Ieslēgt automātisko maiņu
+                    </button>
                 </figcaption>
             </figure>
         </section>

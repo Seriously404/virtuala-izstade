@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 1920,
         "height": 1080
-    }
+    },
+    "alt": "Steam datora programmas veikala saskarne",
+    "backgroundAlt": "Half-Life 2 dzelzceļa stacijas aina ar tēliem"
 });

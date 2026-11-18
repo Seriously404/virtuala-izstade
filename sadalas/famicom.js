@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 256,
         "height": 240
-    }
+    },
+    "alt": "Sarkanbalta Nintendo Famicom konsole ar divām vadu pultīm",
+    "backgroundAlt": "Super Mario Bros. spēles līmenis ar ķieģeļiem un zaļu cauruli"
 });

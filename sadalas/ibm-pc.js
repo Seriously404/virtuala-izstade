@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 400,
         "height": 250
-    }
+    },
+    "alt": "IBM 5150 personālais dators ar monitoru un tastatūru",
+    "backgroundAlt": "Microsoft Flight Simulator 1.0 kabīne un lidojuma skats"
 });

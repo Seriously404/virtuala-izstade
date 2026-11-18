@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 320,
         "height": 226
-    }
+    },
+    "alt": "Atari 2600 konsole ar koka raksta priekšpusi un kursorsviru",
+    "backgroundAlt": "Pitfall! spēles džungļu aina ar spēlētāja tēlu"
 });

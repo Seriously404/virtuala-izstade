@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 320,
         "height": 240
-    }
+    },
+    "alt": "Sākotnējās DOOM spēles vāka ilustrācija",
+    "backgroundAlt": "DOOM spēles aina skatā no spēlētāja acīm"
 });

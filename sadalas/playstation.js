@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 320,
         "height": 240
-    }
+    },
+    "alt": "Pirmā pelēkā Sony PlayStation konsole ar vadības pulti",
+    "backgroundAlt": "Ridge Racer sacīkšu trase ar automašīnām"
 });

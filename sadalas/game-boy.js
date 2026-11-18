@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 160,
         "height": 144
-    }
+    },
+    "alt": "Pelēka Nintendo Game Boy pārnēsājamā konsole ar ekrānu un pogām",
+    "backgroundAlt": "Tetris spēles laukums ar krītošiem blokiem"
 });

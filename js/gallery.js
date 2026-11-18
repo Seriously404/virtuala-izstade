@@ -7,13 +7,14 @@ function renderGallery() {
         <article class="gallery-item" id="${stage.id}">
             <img
                 src="${stage.image}"
+                alt="${stage.alt}"
                 width="${stage.imageResolution.width}"
                 height="${stage.imageResolution.height}"
                 loading="lazy"
             >
 
             <div class="gallery-content">
-                <p class="year>
+                <p class="year">
                     <time datetime="${stage.year}">
                         ${stage.year}
                     </time>

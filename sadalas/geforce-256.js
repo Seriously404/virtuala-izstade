@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 800,
         "height": 600
-    }
+    },
+    "alt": "VisionTek GeForce 256 videokarte ar dzesētāju un pieslēgvietām",
+    "backgroundAlt": "Quake III Arena trīsdimensiju arēna"
 });

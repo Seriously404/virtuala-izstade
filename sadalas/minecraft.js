@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 1920,
         "height": 960
-    }
+    },
+    "alt": "Minecraft spēles nosaukuma logotips",
+    "backgroundAlt": "Minecraft Nether dimensijas blokainā ainava"
 });

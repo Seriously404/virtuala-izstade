@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 1920,
         "height": 1080
-    }
+    },
+    "alt": "Sākotnējais Steam Deck pārnēsājamais dators ar ekrānu un vadības pogām",
+    "backgroundAlt": "Aperture Desk Job izmēģinājumu telpa"
 });

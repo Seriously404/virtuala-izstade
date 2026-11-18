@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 400,
         "height": 250
-    }
+    },
+    "alt": "Commodore 64 mājas dators ar iebūvētu tastatūru",
+    "backgroundAlt": "The Great Giana Sisters krāsainais platformu spēles līmenis"
 });

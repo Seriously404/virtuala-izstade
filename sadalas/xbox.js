@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 368,
         "height": 276
-    }
+    },
+    "alt": "Pirmā melnā Microsoft Xbox konsole ar vadības pulti",
+    "backgroundAlt": "Halo: Combat Evolved spēles aina skatā no spēlētāja acīm"
 });

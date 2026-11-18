@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 1600,
         "height": 900
-    }
+    },
+    "alt": "Sākotnējā baltmelnā PlayStation 5 konsole ar DualSense pulti",
+    "backgroundAlt": "Astro’s Playroom krāsainā spēles pasaule"
 });

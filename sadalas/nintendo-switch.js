@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 421,
         "height": 237
-    }
+    },
+    "alt": "Nintendo Switch ekrāns ar zilas un sarkanas krāsas Joy-Con pultīm",
+    "backgroundAlt": "Link lido ar planieri pāri The Legend of Zelda: Breath of the Wild ainavai"
 });

@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 554,
         "height": 341
-    }
+    },
+    "alt": "Melnā sākotnējā PlayStation 4 konsole ar DualShock 4 pulti",
+    "backgroundAlt": "Killzone: Shadow Fall spēles aina ar karavīru un nākotnes pilsētu"
 });

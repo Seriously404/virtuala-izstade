@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 1920,
         "height": 1277
-    }
+    },
+    "alt": "Balta Nintendo Wii konsole statīvā un Wii Remote vadības pults",
+    "backgroundAlt": "Divi cilvēki spēlē Wii Sports ar kustību vadības pultīm"
 });

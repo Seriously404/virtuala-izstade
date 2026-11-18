@@ -15,5 +15,7 @@ window.exhibitionStages.push({
     "backgroundResolution": {
         "width": 800,
         "height": 600
-    }
+    },
+    "alt": "Dzeltenais Atari Pong spēļu automāts ar ekrānu un diviem vadības rokturiem",
+    "backgroundAlt": "Pong spēles laukums ar raketēm, bumbiņu un rezultātu"
 });
