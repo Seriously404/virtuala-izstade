@@ -141,7 +141,7 @@ a {
     font-size: clamp(1.6rem, 4vw, 3rem);
     line-height: 1.25;
     letter-spacing: -0.04em;
-    overflow-wrap: anywhere;
+    overflow-wrap: anywhere; /
 }
 
 /* Ievada apraksta platums un teksta izmērs. */
