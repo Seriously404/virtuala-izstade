@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Virtuāla izstāde par videospēļu vēsturi: no Pong spēļu automāta līdz mūsdienu datorspēļu grafikai.">
     <title>Videospēļu vēsture | Spēļu pietura</title>
+
+    <!-- Stils un JavaScript faili tiek ielādēti no citām mapēm. -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Katrs fails pievieno vienu izstādes pieminekli. -->
     <script src="sadalas/pong.js" defer></script>
     <script src="sadalas/atari-2600.js" defer></script>
     <script src="sadalas/ibm-pc.js" defer></script>
@@ -25,10 +29,12 @@
     <script src="sadalas/playstation-5.js" defer></script>
     <script src="sadalas/steam-deck.js" defer></script>
     <script src="sadalas/dlss-4-5.js" defer></script>
+    <!-- Šie faili parāda galeriju un darbina karuseli. -->
     <script src="js/gallery.js" defer></script>
     <script src="js/carousel.js" defer></script>
 </head>
 <body>
+    <!-- Galvenes josla: logo un navigācijas saites. -->
     <header class="header" id="sakums">
         <div class="container">
             <a class="logo" href="#sakums">Spēļu pietura</a>
@@ -45,15 +51,16 @@
     </header>
 
     <main>
+        <!-- Galvenā ievada sadaļa ar lielo virsrakstu. -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
                     <p class="subtitle">Virtuālā izstāde / 1972-2026</p>
                     <h1>Videospēļu vēsture</h1>
                     <p>
-                        Kādreiz pietika ar divām svītrām un bumbiņu uz ekrāna.
-                        Vēlāk spēles varēja paņemt līdzi kabatā un spēlēt kopā ar draugiem internetā.
-                        Iepazīsti pieturas šajā attīstības ceļā!
+                        Kāds laiks spēlēm bija vajadzīgas tikai divas svītras un bumbiņa.
+                        Tagad tās varam spēlēt kabatas konsolē vai kopā ar draugiem internetā.
+                        Dodies līdzi spēļu attīstības ceļā!
                     </p>
                     <a class="button" href="#karuselis">Sākt laika ceļojumu</a>
                 </div>
@@ -65,23 +72,24 @@
             </div>
         </section>
 
+        <!-- Īss paskaidrojums par izstādes ideju. -->
         <section class="about" id="par-izstadi">
             <div class="container">
                 <h2>Par izstādi</h2>
                 <p>
-                    Šīs izstādes mērķis ir parādīt, kā mainījās videospēles un ierīces,
-                    ar kurām tās spēlējam. Esam izvēlējušies spēļu automātus,
-                    konsoles, personālos datorus, spēles un grafikas tehnoloģijas, kas palīdz iepazīt dažādus videospēļu vēstures posmus.
+                    Šī izstāde parāda, kā spēles un ierīces, uz kurām tās spēlējam, ir mainījušās.
+                    Šeit būs spēļu automāti, konsoles, personālie datori, populāras spēles
+                    un tehnoloģijas, kas uzlaboja grafiku.
                 </p>
                 <p>
-                    Galerija sākas ar Pong un turpinās ar konsolēm, datorspēlēm un grafikas tehnoloģijām.
-                    Pievērs uzmanību tam, kā mainās ne tikai spēļu grafika, bet arī vadības
-                    pultis un pats spēlēšanas veids. Norādītie gadi ir spēles, ierīces vai tehnoloģijas
-                    pirmās iznākšanas gadi; dažādos reģionos tie var atšķirties.
+                    Ceļojums sākas ar Pong un turpinās līdz mūsdienu spēlēm.
+                    Uzmanies, kā mainās grafika, vadības ierīces un pats spēlēšanas veids.
+                    Norādītie gadi ir pirmās izlaišanas gadi, kas dažādos reģionos var atšķirties.
                 </p>
             </div>
         </section>
 
+        <!-- Karuselis: šeit lietotājs var pāriet starp izstādes notikumiem. -->
         <section class="carousel-section" id="karuselis">
             <div class="carousel-backdrop" aria-hidden="true">
                 <img id="carousel-background" alt="">
@@ -158,6 +166,7 @@
             </figure>
         </section>
 
+        <!-- Galerija tiek aizpildīta automātiski ar JavaScript. -->
         <section class="gallery" id="galerija">
             <div class="container">
                 <h2>Galerija</h2>
@@ -165,6 +174,7 @@
             </div>
         </section>
 
+        <!-- Avoti un attēlu licence. -->
         <section class="sources" id="avoti">
             <div class="container">
                 <h2>Informācijas avoti</h2>
@@ -236,6 +246,7 @@
         </section>
     </main>
 
+    <!-- Lapas apakšdaļa ar autoriem un saitēm. -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Ronalds Krūmiņš, Gabriēls Buholts, Olivers Martinsons.</p>
