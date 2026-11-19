@@ -1,6 +1,14 @@
 const carouselStages = window.exhibitionStages;
 
-const carouselImage = document.getElementById("carousel-image");
+const carouselImage = 
+    document.getElementById("carousel-image");
+const carouselBackground =
+    document.getElementById("carousel-background");
+const previousPreview =
+    document.getElementById("carousel-preview-previous");
+const nextPreview =
+    document.getElementById("carousel-preview-next");
+
 const carouselTitle = document.getElementById("carousel-title");
 const carouselDescription = document.getElementById("carousel-description");
 const carouselCounter = document.getElementById("carousel-counter");
@@ -10,7 +18,7 @@ const nextButton = document.getElementById("carousel-next");
 
 const autoplayButton = document.getElementById("carousel-autoplay");
 const autoplayProgress = document.getElementById("carousel-progress");
-const autoplayInterval = 5000;
+const autoplayInterval = 10000;
 
 let autoplayTimer = null;
 let slideStartedAt = 0;
@@ -18,6 +26,21 @@ let currentIndex = 0;
 
 function showStage() {
     const stage = carouselStages[currentIndex];
+    let previousIndex = currentIndex - 1;
+    let nextIndex = currentIndex + 1;
+
+    if (previousIndex < 0) {
+        previousIndex = carouselStages.length - 1;
+    }
+
+    if (nextIndex >= carouselStages.length) {
+        nextIndex = 0;
+    }
+
+    previousPreview.src = carouselStages[previousIndex].image;
+    nextPreview.src = carouselStages[nextIndex].image;
+    carouselBackground.src = stage.backgroundImage;
+    
     slideStartedAt = performance.now();
     autoplayProgress.value = 0;
 
