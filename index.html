@@ -85,6 +85,7 @@
         <section class="carousel-section" id="karuselis">
             <div class="carousel-backdrop" aria-hidden="true">
                 <img id="carousel-background" alt="">
+                <img id="carousel-background-next" alt="">
             </div>
 
             <h2>Karuselis</h2>
@@ -144,9 +145,11 @@
                         <progress id="carousel-progress" max="5000" value="0"
                                   aria-label="Laiks līdz nākamajam attēlam" hidden></progress>
                     </div>
-                    <p id="carousel-counter" aria-live="polite"></p>
-                    <h3 id="carousel-title"></h3>
-                    <p id="carousel-description"></p>
+                    <div id="carousel-text" class="carousel-text">
+                        <p id="carousel-counter" aria-live="polite"></p>
+                        <h3 id="carousel-title"></h3>
+                        <p id="carousel-description"></p>
+                    </div>
                     <button type="button" id="carousel-autoplay" class="button"
                             aria-pressed="false" aria-controls="carousel-image">
                         Ieslēgt automātisko maiņu
