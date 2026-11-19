@@ -1,7 +1,8 @@
 /* Krāsas izstādes lapai */
 :root {
     --teksts: #4CFFDB;
-    --iekrāsojums_teksts: #ffdd00;
+    --iekrāsojums: #1E6656;
+    --iekrāsojums_teksts: #FFDD00;
     --aizmugures_fons: #20145B;
     --aizmugures_fons2: #180F47;
     --aizmugures_fons3: #140C3A;
@@ -127,6 +128,7 @@ a {
     margin-top: 12px;
     padding: 11px 18px;
     border-radius: 6px;
+    border: 1px solid var(--teksts);
     color: var(--teksts);
     background: var(--aizmugures_fons3);
     font-weight: 700;
@@ -135,7 +137,7 @@ a {
 
 .button:hover,
 .button:focus {
-    background: var(--kājene_fons);
+    background: var(--iekrāsojums);
 }
 
 section {
