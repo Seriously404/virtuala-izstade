@@ -1,23 +1,34 @@
-/* Krāsas izstādes lapai */
-:root {
-    --teksts: #4CFFDB;
-    --iekrāsojums: #1E6656;
-    --iekrāsojums_teksts: #FFDD00;
-    --aizmugures_fons: #20145B;
-    --aizmugures_fons2: #180F47;
-    --aizmugures_fons3: #140C3A;
-    --kājene_fons: #0B3330;
-    --sadalītājs: #05030F;
+@font-face {
+    font-family: "The-Font";
+    src: url("PressStart2P-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
+/* Vietnē izmantotās krāsas, lai tās varētu ērti mainīt visā lapā. */
+:root {
+    --teksts: #4CFFDB; /* Galvenā teksta un apmaļu krāsa. */
+    --iekrāsojums: #1E6656; /* Fons, kad saitei vai pogai ir fokuss. */
+    --iekrāsojums_teksts: #FFDD00; /* Navigācijas saišu izcēluma krāsa. */
+    --aizmugures_fons: #20145B; /* Galvenais bloku fons. */
+    --aizmugures_fons2: #180F47; /* Alternatīvs fons, piemēram, ievada sadaļai. */
+    --aizmugures_fons3: #140C3A; /* Lapas un pogu tumšākais fons. */
+    --kājene_fons: #0B3330; /* Kājenes un fokusa stāvokļa fons. */
+    --sadalītājs: #05030F; /* Apmaļu un atdalītāju krāsa. */
+}
+
+/* Platuma un augstuma aprēķinos iekļauj apmales un iekšējās atkāpes. */
 * {
     box-sizing: border-box;
 }
 
+/* Ritinot uz lapas sadaļu, pāreja notiek pakāpeniski. */
 html {
     scroll-behavior: smooth;
 }
 
+/* Lapas pamatkrāsa, fons, fonts un teksta rindu augstums. */
 body {
     margin: 0;
     color: var(--teksts);
@@ -26,25 +37,30 @@ body {
     line-height: 1.65;
 }
 
+/* Attēli nepārsniedz to vecākelementa platumu un saglabā proporcijas. */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Saites pēc noklusējuma izmanto galveno teksta krāsu. */
 a {
     color: var(--teksts);
 }
 
+/* Ierobežo satura platumu un centrē to lapā. */
 .container {
     width: min(1100px, calc(100% - 40px));
     margin-inline: auto;
 }
 
+/* Galvenes fons un apakšējā atdalošā līnija. */
 .header {
     background: var(--aizmugures_fons);
     border-bottom: 3px solid var(--sadalītājs);
 }
 
+/* Sakārto logotipu un navigāciju vienā rindā. */
 .header .container {
     min-height: 72px;
     display: flex;
@@ -53,6 +69,7 @@ a {
     gap: 24px;
 }
 
+/* Galvenes logotipa izskats. */
 .logo {
     color: var(--teksts);
     font-size: 1.15rem;
@@ -60,6 +77,7 @@ a {
     text-decoration: none;
 }
 
+/* Noņem sarakstu noklusēto atkāpi un aizzīmes šīm izvēlnēm. */
 .navigation ul,
 .stage-links,
 .sources ul,
@@ -69,38 +87,45 @@ a {
     list-style: none;
 }
 
+/* Izvieto navigācijas saites rindā un ļauj tām pāriet jaunā rindā. */
 .navigation ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+/* Navigācijas saišu pamatstils. */
 .navigation a {
     color: var(--teksts);
     font-size: 0.92rem;
     text-decoration: none;
 }
 
+/* Izceļ navigācijas saiti, kad tai uzbrauc ar kursoru vai piekļūst ar tastatūru. */
 .navigation a:hover,
 .navigation a:focus {
     color: var(--iekrāsojums_teksts);
 }
 
+/* Ievada sadaļas fons un atdalījums no nākamās sadaļas. */
 .hero {
     background: var(--aizmugures_fons2);
     border-bottom: 3px solid var(--sadalītājs);
 }
 
+/* Novieto ievada saturu vertikāli centrā un nosaka sadaļas minimālo augstumu. */
 .hero .container {
     min-height: 420px;
     display: flex;
     align-items: center;
 }
 
+/* Ierobežo ievada teksta bloka platumu. */
 .hero-content {
     max-width: 680px;
 }
 
+/* Vienāds stils ievada apakšvirsrakstam un laika līnijas gadam. */
 .subtitle,
 .year {
     color: var(--teksts);
@@ -110,6 +135,7 @@ a {
     text-transform: uppercase;
 }
 
+/* Ievada galvenā virsraksta izmērs un atstarpes. */
 .hero h1 {
     margin: 8px 0 18px;
     font-size: clamp(2.6rem, 8vw, 5rem);
@@ -117,12 +143,14 @@ a {
     letter-spacing: -0.04em;
 }
 
+/* Ievada apraksta platums un teksta izmērs. */
 .hero p:not(.subtitle) {
     max-width: 620px;
     color: var(--teksts);
     font-size: 1.05rem;
 }
 
+/* Kopīgais stils sākuma saitei un karuseļa automātiskās maiņas pogai. */
 .button {
     display: inline-block;
     margin-top: 12px;
@@ -135,15 +163,18 @@ a {
     text-decoration: none;
 }
 
+/* Maina pogas fonu, novietojot kursoru vai fokusējot pogu ar tastatūru. */
 .button:hover,
 .button:focus {
     background: var(--iekrāsojums);
 }
 
+/* Vienāda vertikālā un horizontālā iekšējā atkāpe visām sadaļām. */
 section {
     padding: 72px 0;
 }
 
+/* Sadaļu otrā līmeņa virsrakstu atstarpes un pielāgojams izmērs. */
 section h2 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -151,11 +182,20 @@ section h2 {
     line-height: 1.2;
 }
 
+/* Īpašo fontu lieto tikai logotipam un attēlos parādītajiem virsrakstiem. */
+.logo,
+.hero h1,
+section h2 {
+    font-family: "The-Font", Arial, Helvetica, sans-serif;
+}
+
+/* Galerijas un avotu sadaļas izmanto vienādu tumšāku fonu. */
 .gallery,
 .sources {
     background: var(--aizmugures_fons);
 }
 
+/* Karuseļa ekrāna izkārtojums; bultu platums pielāgojas loga izmēram. */
 .carousel-section {
     --carousel-arrow-width: clamp(48px, 7vw, 100px);
 
@@ -173,12 +213,14 @@ section h2 {
     overflow: hidden;
 }
 
+/* Karuseļa virsraksts atrodas virs attēlu un fona slāņiem. */
 .carousel-section > h2 {
     margin: 0;
     position: relative;
     z-index: 1;
 }
 
+/* Sadalīta vieta galvenajam attēlam un tā aprakstam. */
 .carousel-figure {
     margin: 0;
     min-height: 0;
@@ -191,12 +233,14 @@ section h2 {
     z-index: 1;
 }
 
+/* Konteiners attēlam un iepriekšējā/nākamā attēla pogām. */
 .carousel-layout {
     position: relative;
     min-height: 0;
     z-index: 1;
 }
 
+/* Galvenais karuseļa attēls tiek centrēts starp vadības bultām. */
 #carousel-image {
     position: absolute;
     top: 0;
@@ -210,6 +254,7 @@ section h2 {
     z-index: 2;
 }
 
+/* Iepriekšējā un nākamā attēla vadības pogu kopīgais stils. */
 .carousel-arrow {
     --icon-size: 40px;
 
@@ -231,14 +276,17 @@ section h2 {
     z-index: 3;
 }
 
+/* Novieto iepriekšējā attēla pogu karuseļa kreisajā malā. */
 #carousel-previous {
     left: 0;
 }
 
+/* Novieto nākamā attēla pogu karuseļa labajā malā. */
 #carousel-next {
     right: 0;
 }
 
+/* Blakus attēlu priekšskatījumi ir aptumšoti un netraucē klikšķiem. */
 .carousel-preview {
     position: absolute;
     top: 15%;
@@ -253,16 +301,19 @@ section h2 {
     pointer-events: none;
 }
 
+/* Daļēji parāda iepriekšējā attēla priekšskatījumu kreisajā pusē. */
 .carousel-preview-previous {
     left: 0;
     transform: translateX(-50%);
 }
 
+/* Daļēji parāda nākamā attēla priekšskatījumu labajā pusē. */
 .carousel-preview-next {
     right: 0;
     transform: translateX(50%);
 }
 
+/* Karuseļa bultu SVG ikonas izmērs un sākotnējā caurspīdība. */
 .carousel-arrow svg {
     display: block;
     width: var(--icon-size);
@@ -270,6 +321,7 @@ section h2 {
     opacity: 0.65;
 }
 
+/* Bultas SVG līnijas kontūra un gali. */
 .carousel-arrow polyline {
     fill: none;
     stroke: currentColor;
@@ -278,21 +330,25 @@ section h2 {
     stroke-linejoin: round;
 }
 
+/* Padara bultas fonu izteiktāku, kad poga ir aktīva vai fokusēta. */
 .carousel-arrow:hover,
 .carousel-arrow:focus-visible {
     background: rgba(128, 128, 128, 0.4);
 }
 
+/* Pilnībā parāda bultas ikonu, kad poga ir aktīva vai fokusēta. */
 .carousel-arrow:hover svg,
 .carousel-arrow:focus-visible svg {
     opacity: 1;
 }
 
+/* Redzams fokusa rāmis tastatūras navigācijai. */
 .carousel-arrow:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: -4px;
 }
 
+/* Karuseļa teksta, progresa joslas un vadības pogas izkārtojums. */
 .carousel-caption {
     display: grid;
     grid-template-rows: 6px minmax(0, 1fr) auto;
@@ -303,11 +359,13 @@ section h2 {
     z-index: 1;
 }
 
+/* Ierobežo karuseļa apraksta un vadības elementu platumu. */
 .carousel-caption > * {
     max-width: 760px;
     margin-inline: auto;
 }
 
+/* Sakārto attēla tekstu rindās un ļauj tam aizņemt pieejamo vietu. */
 .carousel-text {
     display: grid;
     grid-template-rows: auto auto minmax(0, 1fr);
@@ -316,11 +374,13 @@ section h2 {
     width: 100%;
 }
 
+/* Konteiners animācijas progresa joslai. */
 .carousel-progress {
     width: 100%;
     height: 6px;
 }
 
+/* Progresa joslas izmērs un tās aizpildījuma krāsa. */
 #carousel-progress {
     width: 100%;
     height: 6px;
@@ -328,10 +388,12 @@ section h2 {
     accent-color: var(--teksts);
 }
 
+/* Parāda progresa joslu tikai tad, kad JavaScript to aktivizē. */
 #carousel-progress:not([hidden]) {
     display: block;
 }
 
+/* Karuseļa tekstiem ļauj ritināt saturu, ja tas neietilpst pieejamajā vietā. */
 #carousel-counter,
 #carousel-title,
 #carousel-description {
@@ -342,21 +404,25 @@ section h2 {
     scrollbar-color: var(--teksts) var(--aizmugures_fons3);
 }
 
+/* Apraksta ritjoslas platums pārlūkprogrammās, kas izmanto WebKit stilus. */
 #carousel-description::-webkit-scrollbar {
     width: 8px;
 }
  
+/* Apraksta ritjoslas sliedes fons un noapaļojums. */
 #carousel-description::-webkit-scrollbar-track {
     background: var(--aizmugures_fons3);
     border-radius: 8px;
 }
  
+/* Apraksta ritjoslas pārvietojamā slīdņa krāsa un noapaļojums. */
 #carousel-description::-webkit-scrollbar-thumb {
     background: var(--teksts);
     border: 2px solid var(--aizmugures_fons3);
     border-radius: 8px;
 }
 
+/* Dekoratīvs fona attēla slānis aiz karuseļa satura. */
 .carousel-backdrop {
     position: absolute;
     inset: 0;
@@ -373,7 +439,9 @@ section h2 {
     );
 }
 
+/* Karuseļa fona attēli aizņem visu laukumu un pielāgojas tā izmēram. */
 #carousel-background,
+/* Paslēpj nākamo fonu, līdz JavaScript sāk tā pakāpenisku parādīšanu. */
 #carousel-background-next {
     position: absolute;
     inset: 0;
@@ -390,10 +458,12 @@ section h2 {
     opacity: 0;
 }
 
+/* Vienāda ciparu platuma fonta cipariem karuseļa skaitītājā. */
 #carousel-counter {
     font-variant-numeric: tabular-nums;
 }
 
+/* Papildu izvietojums un mijiedarbības stils automātiskās maiņas pogai. */
 #carousel-autoplay {
     justify-self: center;
     margin: 0;
@@ -404,14 +474,17 @@ section h2 {
     cursor: pointer;
 }
 
+/* Nodrošina minimālu galerijas augstumu, arī pirms tās satura ielādes. */
 .gallery-grid {
     min-height: 1px;
 }
 
+/* Ierobežo apraksta rindas platumu sadaļā “Par”. */
 .about p {
     max-width: 760px;
 }
 
+/* Izvieto izstādes posmu saites režģī. */
 .stage-links {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -419,6 +492,7 @@ section h2 {
     margin-top: 24px;
 }
 
+/* Katras izstādes posma saites izskats. */
 .stage-links a {
     display: block;
     min-height: 64px;
@@ -430,17 +504,20 @@ section h2 {
     text-decoration: none;
 }
 
+/* Izceļ izstādes posma saiti, kad tai uzbrauc ar kursoru vai fokusē. */
 .stage-links a:hover,
 .stage-links a:focus {
     border-color: var(--kājene_fons);
     background: var(--aizmugures_fons2);
 }
 
+/* Avotu sarakstam izmanto režģi, izņemot attēlu kredītu sarakstu. */
 .sources ul:not(.image-credits ul) {
     display: grid;
     gap: 8px;
 }
 
+/* Attēlu kredītu bloka atstarpe, apmale un fons. */
 .image-credits {
     margin-top: 24px;
     padding: 16px;
@@ -449,26 +526,31 @@ section h2 {
     background: var(--aizmugures_fons2);
 }
 
+/* Norāda, ka attēlu kredītu kopsavilkumu var atvērt. */
 .image-credits summary {
     cursor: pointer;
     font-weight: 700;
 }
 
+/* Attēlu kredītu saraksta atstarpes. */
 .image-credits ul {
     display: grid;
     gap: 8px;
 }
 
+/* Kājenes iekšējās atstarpes, teksta krāsa un fons. */
 .footer {
     padding: 32px 0;
     color: var(--teksts);
     background: var(--kājene_fons);
 }
 
+/* Samazina kājenes rindkopu vertikālās atstarpes. */
 .footer p {
     margin: 4px 0;
 }
 
+/* Kājenes saišu izvietojums un krāsa. */
 .footer a {
     display: inline-block;
     margin-right: 18px;
@@ -476,6 +558,7 @@ section h2 {
     color: var(--teksts);
 }
 
+/* Izvieto atsevišķu spēles/izstādes ierakstu attēlu un tekstu kolonnās. */
 .gallery-item {
     display: grid;
     grid-template-columns: minmax(260px, 380px) 1fr;
@@ -488,6 +571,7 @@ section h2 {
     background: var(--aizmugures_fons);
 }
 
+/* Galerijas ieraksta attēls saglabā proporcijas piešķirtajā laukumā. */
 .gallery-item img {
     width: 100%;
     height: 280px;
@@ -495,22 +579,27 @@ section h2 {
     background: var(--aizmugures_fons3);
 }
 
+/* Galerijas ieraksta galvenā virsraksta izmērs un atstarpes. */
 .gallery-item h1 {
     margin: 6px 0 12px;
     font-size: clamp(2rem, 5vw, 3.2rem);
     line-height: 1.1;
 }
 
+/* Atstarpe un maksimālais platums galerijas ieraksta pavadošajam tekstam. */
 .gallery-item + p {
     max-width: 900px;
     margin: -40px auto 50px;
 }
 
+/* Pielāgo satura atkāpes un izkārtojumus planšetēm un šaurākiem ekrāniem. */
 @media (max-width: 760px) {
+    /* Uz maziem ekrāniem atstāj vairāk vietas saturam. */
     .container {
         width: min(100% - 32px, 1100px);
     }
 
+    /* Pārvieto galvenes navigāciju zem logotipa. */
     .header .container {
         align-items: flex-start;
         flex-direction: column;
@@ -519,59 +608,72 @@ section h2 {
         padding-bottom: 14px;
     }
 
+    /* Samazina atstarpi starp navigācijas saitēm. */
     .navigation ul {
         gap: 8px 14px;
     }
 
+    /* Nedaudz samazina ievada sadaļas minimālo augstumu. */
     .hero .container {
         min-height: 380px;
     }
 
+    /* Samazina sadaļu vertikālās atkāpes. */
     section {
         padding: 52px 0;
     }
 
+    /* Rāda izstādes posmus divās kolonnās. */
     .stage-links {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    /* Galerijas ieraksta attēlu un tekstu novieto vienu zem otra. */
     .gallery-item {
         grid-template-columns: 1fr;
         margin: 32px auto;
         padding: 18px;
     }
 
+    /* Samazina galerijas attēla augstumu mobilajā izkārtojumā. */
     .gallery-item img {
         height: 220px;
     }
 }
 
+/* Pielāgo navigāciju un posmu saites ļoti šauriem ekrāniem. */
 @media (max-width: 430px) {
+    /* Rāda navigācijas saites divās kolonnās. */
     .navigation ul {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    /* Rāda izstādes posmu saites vienā kolonnā. */
     .stage-links {
         grid-template-columns: 1fr;
     }
 }
 
+/* Ļauj ievada saturam pārkārtoties vairākās rindās, ja nepietiek vietas. */
 .hero .container {
     flex-wrap: wrap;
     gap: 2rem;
 }
 
+/* Ievada teksts un attēls sadala pieejamo platumu un var pāriet nākamajā rindā. */
 .hero-content,
 .hero-image {
     flex: 1 1 22rem;
     min-width: 0;
 }
 
+/* Noņem attēla elementa noklusēto ārējo atkāpi. */
 .hero-image {
     margin: 0;
 }
 
+/* Attēls aizņem visu tam pieejamo platumu un tiek rādīts kā bloka elements. */
 .hero-image img {
     display: block;
     width: 100%;
